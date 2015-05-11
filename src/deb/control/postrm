@@ -1,5 +1,5 @@
 #!/bin/sh
 
 set -e
-rm -f /etc/profile.d/spark${spark_version}.sh 
+rm -f /etc/profile.d/spark[[spark_version]].sh 
 
