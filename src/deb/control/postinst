@@ -2,5 +2,6 @@
 
 set -e
 
-echo 'export SPARK_${spark_version//\./_}_HOME=/usr/share/spark${spark_version}' > /etc/profile.d/spark${spark_version}.sh
+SPARK_VERSION=[[spark_version]]
+echo 'export SPARK_${SPARK_VERSION//\./_}_HOME=/usr/share/spark${SPARK_VERSION}' > /etc/profile.d/spark${SPARK_VERSION}.sh
 
