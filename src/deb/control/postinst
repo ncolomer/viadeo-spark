@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+echo 'export SPARK_${spark_version//\./_}_HOME=/usr/share/spark${spark_version}' > /etc/profile.d/spark${spark_version}.sh
+
